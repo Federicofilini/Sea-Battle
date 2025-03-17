@@ -132,11 +132,12 @@ body {
   cursor: text;
   border: 1px solid rgba(244, 217, 177, 0.47);
 }
-.fild__form textarea:last-of-type:hover{
-border: 1px solid rgb(244, 217, 177);
+.fild__form textarea:last-of-type:hover {
+  border: 1px solid rgb(244, 217, 177);
 }
 
 .cell {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,6 +148,29 @@ border: 1px solid rgb(244, 217, 177);
   text-shadow: 1px 1px 0 #000, 2px 2px 0 #333, 3px 3px 0 #555;
   cursor: pointer;
 }
+.--is--target {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(244, 217, 177);
+}
+.--is--destroed {
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-image: url(./img/fire.png);
+  background-color: #731313;
+  border: 1px solid rgb(244, 217, 177);
+  z-index: 2;
+}
+.--is--missed {
+  width: 25px;
+  height: 25px;
+  background-size: contain;
+  background-image: url(./img/cross.png);
+  background-color: #040303bd;
+  z-index: 2;
+}
+
 .cell:not(.touch-not):hover {
   background-color: rgba(71, 69, 69, 0.889);
 }
