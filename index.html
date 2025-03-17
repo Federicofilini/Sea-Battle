@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Sea Battle</title>
+  </head>
+  <body>
+    <header class="header"><h1>Sea BattlE</h1></header>
+    <main class="main">
+      <section class="fild__wrapper">
+        <div class="fild">
+          <form action="" method="post" class="fild__form">
+            <h3>ChaT</h3>
+            <textarea id="AnswerAria" readonly></textarea>
+            <h3>MessagE</h3>
+            <textarea
+              class="text_area"
+              name=""
+              id="SentMessageArea"
+              required
+            ></textarea>
+            <button class="btn" type="reset">CleaR</button>
+            <button class="btn" id="SendMessageBtn">SenD</button>
+          </form>
+          <img
+            src="./img/background-image.webp"
+            alt="Window on an old ship overlooking the battle"
+            class="background-img"
+            width="720"
+            height="700"
+          />
+          <h3 class="battlefild-name">Your BattlefilD</h3>
+          <div class="battlefild">
+            <span class="cell touch-not"></span
+            ><span class="cell touch-not">1</span
+            ><span class="cell touch-not">2</span
+            ><span class="cell touch-not">3</span
+            ><span class="cell touch-not">4</span
+            ><span class="cell touch-not">5</span
+            ><span class="cell touch-not">6</span
+            ><span class="cell touch-not">7</span
+            ><span class="cell touch-not">8</span
+            ><span class="cell touch-not">9</span
+            ><span class="cell touch-not">10</span
+            ><span class="cell touch-not">A</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span> <span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">B</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span> <span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">C</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">D</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">E</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">F</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">G</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">H</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">I</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">J</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span>
+            <span class="cell"></span>
+          </div>
+          <div class="harbor">
+            <h3>YuoR HarboR</h3>
+            <div class="ship-types">
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-tree ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span>
+              </div>
+              <div class="ship-tree ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-four ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span><span class="cell"></span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button class="settings-btn btn" id="set-btn">SettingS</button>
+
+            <div class="settings-box">
+              <label for="empty-cells" class="settings__input-label"
+                >Mark empty cells
+                <input type="checkbox" class="settings__input" id="empty-cells"
+              /></label>
+              <label for="enable-notifications" class="settings__input-label"
+                >Enable notifications
+                <input
+                  type="checkbox"
+                  class="settings__input"
+                  id="enable-notifications"
+              /></label>
+              <label for="сompact-chat" class="settings__input-label"
+                >Compact chat
+                <input
+                  type="checkbox"
+                  class="settings__input"
+                  id="сompact-chat"
+              /></label>
+
+              <label for="unmute" class="settings__input-label"
+                >Unmute
+                <input type="checkbox" class="settings__input" id="unmute"
+              /></label>
+
+              <button class="btn" id="CloseSettingsBtn">Close</button>
+            </div>
+          </div>
+        </div>
+        <div class="fild">
+          <img
+            src="./img/background-image.webp"
+            alt="Window on an old ship overlooking the battle"
+            class="background-img"
+            width="720"
+            height="700"
+          />
+          <h3 class="battlefild-name">Enemy BattlefilD</h3>
+          <div class="battlefild">
+            <span class="cell touch-not"></span
+            ><span class="cell touch-not">1</span
+            ><span class="cell touch-not">2</span
+            ><span class="cell touch-not">3</span
+            ><span class="cell touch-not">4</span
+            ><span class="cell touch-not">5</span
+            ><span class="cell touch-not">6</span
+            ><span class="cell touch-not">7</span
+            ><span class="cell touch-not">8</span
+            ><span class="cell touch-not">9</span
+            ><span class="cell touch-not">10</span
+            ><span class="cell touch-not">A</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span> <span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">B</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">C</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">D</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">E</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">F</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">G</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">H</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell touch-not">I</span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell touch-not">J</span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span
+            ><span class="cell"></span><span class="cell"></span>
+          </div>
+          <div class="harbor">
+            <h3>Enemy HarboR</h3>
+            <div class="ship-types">
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+              <div class="ship-one ship">
+                <span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+              <div class="ship-two ship">
+                <span class="cell"></span><span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-tree ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span>
+              </div>
+              <div class="ship-tree ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span>
+              </div>
+            </div>
+            <div class="ship-types">
+              <div class="ship-four ship">
+                <span class="cell"></span><span class="cell"></span
+                ><span class="cell"></span><span class="cell"></span>
+              </div>
+            </div>
+          </div>
+          <div class="preload-box">
+            <h3>Choose your enemy</h3>
+            <a href="#" class="preload-box__link btn">Random</a
+            ><a href="#" class="preload-box__link btn">Familiar</a>
+            <h3>Fleet type</h3>
+            <a href="#" class="preload-box__link btn">Russian</a
+            ><a href="#" class="preload-box__link btn">Classical</a>
+
+            <lable for="CopyLinkInput">Copy the link and send</lable>
+            <input type="text" class="preload-box__link" id="CopyLinkInput" />
+            <button class="btn" id="PlayBtn">Play</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      // Получаем ссылки на элементы
+      const OpenSettingsBtn = document.getElementById("set-btn");
+      const SettingsBox = document.querySelector(".settings-box");
+      const CloseSettingsBoxBtn = document.getElementById("CloseSettingsBtn");
+
+      // Функция для показа окна настроек
+      function showSettingsBox() {
+        SettingsBox.style.visibility = "visible";
+        SettingsBox.style.opacity = "1";
+      }
+
+      // Функция для скрытия окна настроек
+      function hideSettingsBox() {
+        SettingsBox.style.visibility = "hidden";
+        SettingsBox.style.opacity = "0";
+      }
+
+      // Назначаем события на кнопки
+      OpenSettingsBtn.addEventListener("click", showSettingsBox);
+      CloseSettingsBoxBtn.addEventListener("click", hideSettingsBox);
+    </script>
+  </body>
+</html>
