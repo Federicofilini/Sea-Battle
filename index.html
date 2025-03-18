@@ -12,13 +12,13 @@
     <main class="main">
       <section class="fild__wrapper">
         <div class="fild">
-          <form action="" method="post" class="fild__form">
+          <form action="#" method="post" class="fild__form">
             <h3>ChaT</h3>
             <textarea id="AnswerAria" readonly></textarea>
             <h3>MessagE</h3>
             <textarea
               class="text_area"
-              name=""
+              name="SentMessageArea"
               id="SentMessageArea"
               required
             ></textarea>
@@ -33,82 +33,164 @@
             height="700"
           />
           <h3 class="battlefild-name">Your BattlefilD</h3>
-          <div class="battlefild">
-            <span class="cell touch-not"></span
-            ><span class="cell touch-not">1</span
-            ><span class="cell touch-not">2</span
-            ><span class="cell touch-not">3</span
-            ><span class="cell touch-not">4</span
-            ><span class="cell touch-not">5</span
-            ><span class="cell touch-not">6</span
-            ><span class="cell touch-not">7</span
-            ><span class="cell touch-not">8</span
-            ><span class="cell touch-not">9</span
-            ><span class="cell touch-not">10</span
-            ><span class="cell touch-not">A</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span> <span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">B</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span> <span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">C</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">D</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">E</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">F</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">G</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">H</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">I</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">J</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span>
-            <span class="cell"></span>
-          </div>
+          <table class="battlefild">
+            <thead>
+              <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>A</th>
+                <td><span class="cell" data-y="0" data-x="0"></span></td>
+                <td><span class="cell" data-y="0" data-x="1"></span></td>
+                <td><span class="cell --is--empty" data-y="0" data-x="2"></span></td>
+                <td><span class="cell --is--empty" data-y="0" data-x="3"></span></td>
+                <td><span class="cell" data-y="0" data-x="4"></span></td>
+                <td><span class="cell" data-y="0" data-x="5"></span></td>
+                <td><span class="cell" data-y="0" data-x="6"></span></td>
+                <td><span class="cell  " data-y="0" data-x="7"></span></td>
+                <td><span class="cell  --is--missed" data-y="0" data-x="8"></span></td>
+                <td><span class="cell  --is--missed" data-y="0" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>B</th>
+                <td><span class="cell" data-y="1" data-x="0"></span></td>
+                <td><span class="cell" data-y="1" data-x="1"></span></td>
+                <td><span class="cell" data-y="1" data-x="2"></span></td>
+                <td><span class="cell" data-y="1" data-x="3"></span></td>
+                <td><span class="cell --is--target" data-y="1" data-x="4"></span></td>
+                <td><span class="cell --is--destroed " data-y="1" data-x="5"></span></td>
+                <td><span class="cell --is--target" data-y="1" data-x="6"></span></td>
+                <td><span class="cell" data-y="1" data-x="7"></span></td>
+                <td><span class="cell" data-y="1" data-x="8"></span></td>
+                <td><span class="cell --is--missed" data-y="1" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>C</th>
+                <td><span class="cell" data-y="2" data-x="0"></span></td>
+                <td><span class="cell" data-y="2" data-x="1"></span></td>
+                <td><span class="cell" data-y="2" data-x="2"></span></td>
+                <td><span class="cell" data-y="2" data-x="3"></span></td>
+                <td><span class="cell" data-y="2" data-x="4"></span></td>
+                <td><span class="cell" data-y="2" data-x="5"></span></td>
+                <td><span class="cell" data-y="2" data-x="6"></span></td>
+                <td><span class="cell" data-y="2" data-x="7"></span></td>
+                <td><span class="cell" data-y="2" data-x="8"></span></td>
+                <td><span class="cell" data-y="2" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td><span class="cell" data-y="3" data-x="0"></span></td>
+                <td><span class="cell" data-y="3" data-x="1"></span></td>
+                <td><span class="cell" data-y="3" data-x="2"></span></td>
+                <td><span class="cell" data-y="3" data-x="3"></span></td>
+                <td><span class="cell" data-y="3" data-x="4"></span></td>
+                <td><span class="cell" data-y="3" data-x="5"></span></td>
+                <td><span class="cell" data-y="3" data-x="6"></span></td>
+                <td><span class="cell" data-y="3" data-x="7"></span></td>
+                <td><span class="cell" data-y="3" data-x="8"></span></td>
+                <td><span class="cell" data-y="3" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>E</th>
+                <td><span class="cell" data-y="4" data-x="0"></span></td>
+                <td><span class="cell" data-y="4" data-x="1"></span></td>
+                <td><span class="cell" data-y="4" data-x="2"></span></td>
+                <td><span class="cell" data-y="4" data-x="3"></span></td>
+                <td><span class="cell" data-y="4" data-x="4"></span></td>
+                <td><span class="cell" data-y="4" data-x="5"></span></td>
+                <td><span class="cell" data-y="4" data-x="6"></span></td>
+                <td><span class="cell" data-y="4" data-x="7"></span></td>
+                <td><span class="cell" data-y="4" data-x="8"></span></td>
+                <td><span class="cell" data-y="4" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>F</th>
+                <td><span class="cell" data-y="5" data-x="0"></span></td>
+                <td><span class="cell" data-y="5" data-x="1"></span></td>
+                <td><span class="cell" data-y="5" data-x="2"></span></td>
+                <td><span class="cell" data-y="5" data-x="3"></span></td>
+                <td><span class="cell" data-y="5" data-x="4"></span></td>
+                <td><span class="cell" data-y="5" data-x="5"></span></td>
+                <td><span class="cell" data-y="5" data-x="6"></span></td>
+                <td><span class="cell" data-y="5" data-x="7"></span></td>
+                <td><span class="cell" data-y="5" data-x="8"></span></td>
+                <td><span class="cell" data-y="5" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>G</th>
+                <td><span class="cell" data-y="6" data-x="0"></span></td>
+                <td><span class="cell" data-y="6" data-x="1"></span></td>
+                <td><span class="cell" data-y="6" data-x="2"></span></td>
+                <td><span class="cell" data-y="6" data-x="3"></span></td>
+                <td><span class="cell" data-y="6" data-x="4"></span></td>
+                <td><span class="cell" data-y="6" data-x="5"></span></td>
+                <td><span class="cell" data-y="6" data-x="6"></span></td>
+                <td><span class="cell" data-y="6" data-x="7"></span></td>
+                <td><span class="cell" data-y="6" data-x="8"></span></td>
+                <td><span class="cell" data-y="6" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>H</th>
+                <td><span class="cell" data-y="7" data-x="0"></span></td>
+                <td><span class="cell" data-y="7" data-x="1"></span></td>
+                <td><span class="cell" data-y="7" data-x="2"></span></td>
+                <td><span class="cell" data-y="7" data-x="3"></span></td>
+                <td><span class="cell" data-y="7" data-x="4"></span></td>
+                <td><span class="cell" data-y="7" data-x="5"></span></td>
+                <td><span class="cell" data-y="7" data-x="6"></span></td>
+                <td><span class="cell" data-y="7" data-x="7"></span></td>
+                <td><span class="cell" data-y="7" data-x="8"></span></td>
+                <td><span class="cell" data-y="7" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>I</th>
+                <td><span class="cell" data-y="8" data-x="0"></span></td>
+                <td><span class="cell" data-y="8" data-x="1"></span></td>
+                <td><span class="cell" data-y="8" data-x="2"></span></td>
+                <td><span class="cell" data-y="8" data-x="3"></span></td>
+                <td><span class="cell" data-y="8" data-x="4"></span></td>
+                <td><span class="cell" data-y="8" data-x="5"></span></td>
+                <td><span class="cell" data-y="8" data-x="6"></span></td>
+                <td><span class="cell" data-y="8" data-x="7"></span></td>
+                <td><span class="cell" data-y="8" data-x="8"></span></td>
+                <td><span class="cell" data-y="8" data-x="9"></span></td>
+              </tr>
+              <tr>
+                <th>J</th>
+                <td><span class="cell" data-y="9" data-x="0"></span></td>
+                <td><span class="cell" data-y="9" data-x="1"></span></td>
+                <td><span class="cell" data-y="9" data-x="2"></span></td>
+                <td><span class="cell" data-y="9" data-x="3"></span></td>
+                <td><span class="cell" data-y="9" data-x="4"></span></td>
+                <td><span class="cell" data-y="9" data-x="5"></span></td>
+                <td><span class="cell" data-y="9" data-x="6"></span></td>
+                <td><span class="cell" data-y="9" data-x="7"></span></td>
+                <td><span class="cell" data-y="9" data-x="8"></span></td>
+                <td><span class="cell" data-y="9" data-x="9"></span></td>
+              </tr>
+            </tbody>
+          </table>
+          
+          
           <div class="harbor">
             <h3>YuoR HarboR</h3>
             <div class="ship-types">
-              <div class="ship-one ship">
+              <div class="ship-one ship ship-margin">
                 <span class="cell --is--target"></span>
               </div>
-              <div class="ship-one ship">
+              <div class="ship-one ship ">
                 <span class="cell --is--target"></span>
               </div>
               <div class="ship-one ship">
@@ -120,8 +202,7 @@
             </div>
             <div class="ship-types">
               <div class="ship-two ship">
-                <span class="--is--destroed"></span
-                ><span class="cell --is--missed"></span>
+                <span class=""></span><span class="cell --is--target"></span>
               </div>
               <div class="ship-two ship">
                 <span class="cell --is--target"></span
@@ -146,14 +227,14 @@
             </div>
             <div class="ship-types">
               <div class="ship-four ship">
-                <span class="cell --is--target"></span
+                <span class="cell --is--destroed "></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
-                ><span class="cell --is--target"></span>
+                ><span class="cell --is--destroed "></span>
               </div>
             </div>
           </div>
-          <!-- --------------------------------settings -->
+          <!-----------------------------------settings-->
           <div>
             <button class="settings-btn btn" id="set-btn">SettingS</button>
 
@@ -195,76 +276,161 @@
             height="700"
           />
           <h3 class="battlefild-name">Enemy BattlefilD</h3>
-          <div class="battlefild">
-            <span class="cell touch-not"></span
-            ><span class="cell touch-not">1</span
-            ><span class="cell touch-not">2</span
-            ><span class="cell touch-not">3</span
-            ><span class="cell touch-not">4</span
-            ><span class="cell touch-not">5</span
-            ><span class="cell touch-not">6</span
-            ><span class="cell touch-not">7</span
-            ><span class="cell touch-not">8</span
-            ><span class="cell touch-not">9</span
-            ><span class="cell touch-not">10</span
-            ><span class="cell touch-not">A</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span> <span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">B</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">C</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">D</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">E</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">F</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">G</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">H</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell touch-not">I</span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell touch-not">J</span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span
-            ><span class="cell"></span><span class="cell"></span>
+          <div>
+            <table class="battlefild">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                  <th>9</th>
+                  <th>10</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>A</th>
+                  <td><span class="cell" data-y="0" data-x="0"></span></td>
+                  <td><span class="cell" data-y="0" data-x="1"></span></td>
+                  <td><span class="cell" data-y="0" data-x="2"></span></td>
+                  <td><span class="cell" data-y="0" data-x="3"></span></td>
+                  <td><span class="cell" data-y="0" data-x="4"></span></td>
+                  <td><span class="cell" data-y="0" data-x="5"></span></td>
+                  <td><span class="cell" data-y="0" data-x="6"></span></td>
+                  <td><span class="cell" data-y="0" data-x="7"></span></td>
+                  <td><span class="cell" data-y="0" data-x="8"></span></td>
+                  <td><span class="cell" data-y="0" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>B</th>
+                  <td><span class="cell" data-y="1" data-x="0"></span></td>
+                  <td><span class="cell" data-y="1" data-x="1"></span></td>
+                  <td><span class="cell" data-y="1" data-x="2"></span></td>
+                  <td><span class="cell" data-y="1" data-x="3"></span></td>
+                  <td><span class="cell" data-y="1" data-x="4"></span></td>
+                  <td><span class="cell" data-y="1" data-x="5"></span></td>
+                  <td><span class="cell" data-y="1" data-x="6"></span></td>
+                  <td><span class="cell" data-y="1" data-x="7"></span></td>
+                  <td><span class="cell" data-y="1" data-x="8"></span></td>
+                  <td><span class="cell" data-y="1" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>C</th>
+                  <td><span class="cell" data-y="2" data-x="0"></span></td>
+                  <td><span class="cell" data-y="2" data-x="1"></span></td>
+                  <td><span class="cell" data-y="2" data-x="2"></span></td>
+                  <td><span class="cell" data-y="2" data-x="3"></span></td>
+                  <td><span class="cell" data-y="2" data-x="4"></span></td>
+                  <td><span class="cell" data-y="2" data-x="5"></span></td>
+                  <td><span class="cell" data-y="2" data-x="6"></span></td>
+                  <td><span class="cell" data-y="2" data-x="7"></span></td>
+                  <td><span class="cell" data-y="2" data-x="8"></span></td>
+                  <td><span class="cell" data-y="2" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>D</th>
+                  <td><span class="cell" data-y="3" data-x="0"></span></td>
+                  <td><span class="cell" data-y="3" data-x="1"></span></td>
+                  <td><span class="cell" data-y="3" data-x="2"></span></td>
+                  <td><span class="cell" data-y="3" data-x="3"></span></td>
+                  <td><span class="cell" data-y="3" data-x="4"></span></td>
+                  <td><span class="cell" data-y="3" data-x="5"></span></td>
+                  <td><span class="cell" data-y="3" data-x="6"></span></td>
+                  <td><span class="cell" data-y="3" data-x="7"></span></td>
+                  <td><span class="cell" data-y="3" data-x="8"></span></td>
+                  <td><span class="cell" data-y="3" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>E</th>
+                  <td><span class="cell" data-y="4" data-x="0"></span></td>
+                  <td><span class="cell" data-y="4" data-x="1"></span></td>
+                  <td><span class="cell" data-y="4" data-x="2"></span></td>
+                  <td><span class="cell" data-y="4" data-x="3"></span></td>
+                  <td><span class="cell" data-y="4" data-x="4"></span></td>
+                  <td><span class="cell" data-y="4" data-x="5"></span></td>
+                  <td><span class="cell" data-y="4" data-x="6"></span></td>
+                  <td><span class="cell" data-y="4" data-x="7"></span></td>
+                  <td><span class="cell" data-y="4" data-x="8"></span></td>
+                  <td><span class="cell" data-y="4" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>F</th>
+                  <td><span class="cell" data-y="5" data-x="0"></span></td>
+                  <td><span class="cell" data-y="5" data-x="1"></span></td>
+                  <td><span class="cell" data-y="5" data-x="2"></span></td>
+                  <td><span class="cell" data-y="5" data-x="3"></span></td>
+                  <td><span class="cell" data-y="5" data-x="4"></span></td>
+                  <td><span class="cell" data-y="5" data-x="5"></span></td>
+                  <td><span class="cell" data-y="5" data-x="6"></span></td>
+                  <td><span class="cell" data-y="5" data-x="7"></span></td>
+                  <td><span class="cell" data-y="5" data-x="8"></span></td>
+                  <td><span class="cell" data-y="5" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>G</th>
+                  <td><span class="cell" data-y="6" data-x="0"></span></td>
+                  <td><span class="cell" data-y="6" data-x="1"></span></td>
+                  <td><span class="cell" data-y="6" data-x="2"></span></td>
+                  <td><span class="cell" data-y="6" data-x="3"></span></td>
+                  <td><span class="cell" data-y="6" data-x="4"></span></td>
+                  <td><span class="cell" data-y="6" data-x="5"></span></td>
+                  <td><span class="cell" data-y="6" data-x="6"></span></td>
+                  <td><span class="cell" data-y="6" data-x="7"></span></td>
+                  <td><span class="cell" data-y="6" data-x="8"></span></td>
+                  <td><span class="cell" data-y="6" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>H</th>
+                  <td><span class="cell" data-y="7" data-x="0"></span></td>
+                  <td><span class="cell" data-y="7" data-x="1"></span></td>
+                  <td><span class="cell" data-y="7" data-x="2"></span></td>
+                  <td><span class="cell" data-y="7" data-x="3"></span></td>
+                  <td><span class="cell" data-y="7" data-x="4"></span></td>
+                  <td><span class="cell" data-y="7" data-x="5"></span></td>
+                  <td><span class="cell" data-y="7" data-x="6"></span></td>
+                  <td><span class="cell" data-y="7" data-x="7"></span></td>
+                  <td><span class="cell" data-y="7" data-x="8"></span></td>
+                  <td><span class="cell" data-y="7" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>I</th>
+                  <td><span class="cell" data-y="8" data-x="0"></span></td>
+                  <td><span class="cell" data-y="8" data-x="1"></span></td>
+                  <td><span class="cell" data-y="8" data-x="2"></span></td>
+                  <td><span class="cell" data-y="8" data-x="3"></span></td>
+                  <td><span class="cell" data-y="8" data-x="4"></span></td>
+                  <td><span class="cell" data-y="8" data-x="5"></span></td>
+                  <td><span class="cell" data-y="8" data-x="6"></span></td>
+                  <td><span class="cell" data-y="8" data-x="7"></span></td>
+                  <td><span class="cell" data-y="8" data-x="8"></span></td>
+                  <td><span class="cell" data-y="8" data-x="9"></span></td>
+                </tr>
+                <tr>
+                  <th>J</th>
+                  <td><span class="cell" data-y="9" data-x="0"></span></td>
+                  <td><span class="cell" data-y="9" data-x="1"></span></td>
+                  <td><span class="cell" data-y="9" data-x="2"></span></td>
+                  <td><span class="cell" data-y="9" data-x="3"></span></td>
+                  <td><span class="cell" data-y="9" data-x="4"></span></td>
+                  <td><span class="cell" data-y="9" data-x="5"></span></td>
+                  <td><span class="cell" data-y="9" data-x="6"></span></td>
+                  <td><span class="cell" data-y="9" data-x="7"></span></td>
+                  <td><span class="cell" data-y="9" data-x="8"></span></td>
+                  <td><span class="cell" data-y="9" data-x="9"></span></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            
           </div>
           <div class="harbor">
-            <h3>Enemy HarboR</h3>
+            <h3>EnemY HarboR</h3>
             <div class="ship-types">
               <div class="ship-one ship">
                 <span class="cell --is--target"></span>
@@ -281,8 +447,8 @@
             </div>
             <div class="ship-types">
               <div class="ship-two ship">
-                <span class="--is--destroed"></span
-                ><span class="cell --is--missed"></span>
+                <span class="--is--target"></span
+                ><span class="cell --is--target"></span>
               </div>
               <div class="ship-two ship">
                 <span class="cell --is--target"></span
@@ -316,13 +482,13 @@
           </div>
           <div class="preload-box">
             <h3>Choose your enemy</h3>
-            <a href="#" class="preload-box__link btn">Random</a
-            ><a href="#" class="preload-box__link btn">Familiar</a>
+            <a href="#" class="preload-box__link btn">RandoM</a
+            ><a href="#" class="preload-box__link btn">FamiliaR</a>
             <h3>Fleet type</h3>
             <a href="#" class="preload-box__link btn">Russian</a
             ><a href="#" class="preload-box__link btn">Classical</a>
 
-            <lable for="CopyLinkInput">Copy the link and send</lable>
+            <label for="CopyLinkInput">Copy the link and send</label>
             <input type="text" class="preload-box__link" id="CopyLinkInput" />
             <button class="btn" id="PlayBtn">Play</button>
           </div>
