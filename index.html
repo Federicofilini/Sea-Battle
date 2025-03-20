@@ -12,7 +12,9 @@
     <main class="main">
       <section class="fild__wrapper">
         <div class="fild">
-          <form action="#" method="post" class="fild__form">
+          <!---------------------------------------------Chat--->
+          <h2 class="battlefild-name">Your BattlefilD</h2>
+          <!-- <form action="#" method="post" class="fild__form">
             <h3>ChaT</h3>
             <textarea id="AnswerAria" readonly></textarea>
             <h3>MessagE</h3>
@@ -24,7 +26,7 @@
             ></textarea>
             <button class="btn" type="reset">CleaR</button>
             <button class="btn" id="SendMessageBtn">SenD</button>
-          </form>
+          </form> -->
           <img
             src="./img/background-image.webp"
             alt="Window on an old ship overlooking the battle"
@@ -32,7 +34,7 @@
             width="720"
             height="700"
           />
-          <h3 class="battlefild-name">Your BattlefilD</h3>
+
           <table class="battlefild">
             <thead>
               <tr>
@@ -54,14 +56,22 @@
                 <th>A</th>
                 <td><span class="cell" data-y="0" data-x="0"></span></td>
                 <td><span class="cell" data-y="0" data-x="1"></span></td>
-                <td><span class="cell --is--empty" data-y="0" data-x="2"></span></td>
-                <td><span class="cell --is--empty" data-y="0" data-x="3"></span></td>
+                <td>
+                  <span class="cell --is--empty" data-y="0" data-x="2"></span>
+                </td>
+                <td>
+                  <span class="cell --is--empty" data-y="0" data-x="3"></span>
+                </td>
                 <td><span class="cell" data-y="0" data-x="4"></span></td>
                 <td><span class="cell" data-y="0" data-x="5"></span></td>
                 <td><span class="cell" data-y="0" data-x="6"></span></td>
-                <td><span class="cell  " data-y="0" data-x="7"></span></td>
-                <td><span class="cell  --is--missed" data-y="0" data-x="8"></span></td>
-                <td><span class="cell  --is--missed" data-y="0" data-x="9"></span></td>
+                <td><span class="cell" data-y="0" data-x="7"></span></td>
+                <td>
+                  <span class="cell --is--missed" data-y="0" data-x="8"></span>
+                </td>
+                <td>
+                  <span class="cell --is--missed" data-y="0" data-x="9"></span>
+                </td>
               </tr>
               <tr>
                 <th>B</th>
@@ -69,12 +79,24 @@
                 <td><span class="cell" data-y="1" data-x="1"></span></td>
                 <td><span class="cell" data-y="1" data-x="2"></span></td>
                 <td><span class="cell" data-y="1" data-x="3"></span></td>
-                <td><span class="cell --is--target" data-y="1" data-x="4"></span></td>
-                <td><span class="cell --is--destroed " data-y="1" data-x="5"></span></td>
-                <td><span class="cell --is--target" data-y="1" data-x="6"></span></td>
+                <td>
+                  <span class="cell --is--target" data-y="1" data-x="4"></span>
+                </td>
+                <td>
+                  <span
+                    class="cell --is--destroed"
+                    data-y="1"
+                    data-x="5"
+                  ></span>
+                </td>
+                <td>
+                  <span class="cell --is--target" data-y="1" data-x="6"></span>
+                </td>
                 <td><span class="cell" data-y="1" data-x="7"></span></td>
                 <td><span class="cell" data-y="1" data-x="8"></span></td>
-                <td><span class="cell --is--missed" data-y="1" data-x="9"></span></td>
+                <td>
+                  <span class="cell --is--missed" data-y="1" data-x="9"></span>
+                </td>
               </tr>
               <tr>
                 <th>C</th>
@@ -182,15 +204,14 @@
               </tr>
             </tbody>
           </table>
-          
-          
+
           <div class="harbor">
             <h3>YuoR HarboR</h3>
             <div class="ship-types">
-              <div class="ship-one ship ship-margin">
+              <div class="ship-one ship">
                 <span class="cell --is--target"></span>
               </div>
-              <div class="ship-one ship ">
+              <div class="ship-one ship">
                 <span class="cell --is--target"></span>
               </div>
               <div class="ship-one ship">
@@ -199,11 +220,7 @@
               <div class="ship-one ship">
                 <span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
-              <div class="ship-two ship">
-                <span class=""></span><span class="cell --is--target"></span>
-              </div>
+
               <div class="ship-two ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
@@ -212,31 +229,35 @@
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
+              <div class="ship-two ship">
+                <span class="cell --is--target"></span
+                ><span class="cell --is--target"></span>
+              </div>
+
               <div class="ship-tree ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
+
               <div class="ship-tree ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
+
               <div class="ship-four ship">
-                <span class="cell --is--destroed "></span
+                <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
-                ><span class="cell --is--destroed "></span>
+                ><span class="cell --is--target"></span>
               </div>
             </div>
           </div>
+
           <!-----------------------------------settings-->
           <div>
-            <button class="settings-btn btn" id="set-btn">SettingS</button>
+            <button class="btn settings-btn" id="set-btn">SettingS</button>
 
             <div class="settings-box">
               <label for="empty-cells" class="settings__input-label"
@@ -268,6 +289,7 @@
           </div>
         </div>
         <div class="fild">
+          <h2 class="battlefild-name">Enemy BattlefilD</h2>
           <img
             src="./img/background-image.webp"
             alt="Window on an old ship overlooking the battle"
@@ -275,7 +297,7 @@
             width="720"
             height="700"
           />
-          <h3 class="battlefild-name">Enemy BattlefilD</h3>
+
           <div>
             <table class="battlefild">
               <thead>
@@ -426,8 +448,6 @@
                 </tr>
               </tbody>
             </table>
-            
-            
           </div>
           <div class="harbor">
             <h3>EnemY HarboR</h3>
@@ -444,12 +464,7 @@
               <div class="ship-one ship">
                 <span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
-              <div class="ship-two ship">
-                <span class="--is--target"></span
-                ><span class="cell --is--target"></span>
-              </div>
+
               <div class="ship-two ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
@@ -458,20 +473,23 @@
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
+              <div class="ship-two ship">
+                <span class="cell --is--target"></span
+                ><span class="cell --is--target"></span>
+              </div>
+
               <div class="ship-tree ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
+
               <div class="ship-tree ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
                 ><span class="cell --is--target"></span>
               </div>
-            </div>
-            <div class="ship-types">
+
               <div class="ship-four ship">
                 <span class="cell --is--target"></span
                 ><span class="cell --is--target"></span
@@ -487,33 +505,32 @@
             <h3>Fleet type</h3>
             <a href="#" class="preload-box__link btn">Russian</a
             ><a href="#" class="preload-box__link btn">Classical</a>
-
             <label for="CopyLinkInput">Copy the link and send</label>
-            <input type="text" class="preload-box__link" id="CopyLinkInput" />
+            <div>
+              
+              <input type="text" class="preload-box__link" id="CopyLinkInput" />
+              <button class="copy-link__btn "><img src="./img/files.png" alt="" width="12" height="12"></button>
+            </div>
             <button class="btn" id="PlayBtn">Play</button>
           </div>
         </div>
       </section>
     </main>
     <script>
-      // Получаем ссылки на элементы
       const OpenSettingsBtn = document.getElementById("set-btn");
       const SettingsBox = document.querySelector(".settings-box");
       const CloseSettingsBoxBtn = document.getElementById("CloseSettingsBtn");
 
-      // Функция для показа окна настроек
       function showSettingsBox() {
         SettingsBox.style.visibility = "visible";
         SettingsBox.style.opacity = "1";
       }
 
-      // Функция для скрытия окна настроек
       function hideSettingsBox() {
         SettingsBox.style.visibility = "hidden";
         SettingsBox.style.opacity = "0";
       }
 
-      // Назначаем события на кнопки
       OpenSettingsBtn.addEventListener("click", showSettingsBox);
       CloseSettingsBoxBtn.addEventListener("click", hideSettingsBox);
     </script>
